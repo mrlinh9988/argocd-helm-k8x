@@ -10,14 +10,14 @@ spec:
   rules:
     - http:
         paths:
-          - path: {{.Values.paths.client}}
+          - path: "{{.Values.paths.client}}"
             pathType: Prefix
             backend:
               service:
                 name: client-cluster-ip-service
                 port:
                   number: {{.Values.ports.client}}
-          - path: {{.Values.paths.api}}
+          - path: "{{.Values.paths.api}}"
             pathType: Prefix
             backend:
               service:
