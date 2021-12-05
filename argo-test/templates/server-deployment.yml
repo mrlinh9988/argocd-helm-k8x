@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: stylerhun/multi-server
+          image: mrlinhdeptrai9988/backend-node
           ports:
             - containerPort: 5000
           env:
